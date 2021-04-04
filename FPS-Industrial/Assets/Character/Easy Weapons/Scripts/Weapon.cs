@@ -137,7 +137,9 @@ public class Weapon : MonoBehaviour
 	private int currentAmmo;							// How much ammo the weapon currently has
 	public float reloadTime = 2.0f;						// How much time it takes to reload the weapon
 	public bool showCurrentAmmo = true;					// Whether or not the current ammo should be displayed in the GUI
-	public bool reloadAutomatically = true;				// Whether or not the weapon should reload automatically when out of ammo
+	public bool reloadAutomatically = false;            // Whether or not the weapon should reload automatically when out of ammo
+
+	public Weapon Instance;
 
 	// Accuracy
 	public float accuracy = 80.0f;						// How accurate this weapon is on a scale of 0 to 100
