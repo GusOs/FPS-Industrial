@@ -134,7 +134,7 @@ public class Weapon : MonoBehaviour
 	public bool infiniteAmmo = false;					// Whether or not this weapon should have unlimited ammo
 	public int ammoCapacity = 12;						// The number of rounds this weapon can fire before it has to reload
 	public int shotPerRound = 1;						// The number of "bullets" that will be fired on each round.  Usually this will be 1, but set to a higher number for things like shotguns with spread
-	private int currentAmmo;							// How much ammo the weapon currently has
+	public int currentAmmo;								// How much ammo the weapon currently has
 	public float reloadTime = 2.0f;						// How much time it takes to reload the weapon
 	public bool showCurrentAmmo = true;					// Whether or not the current ammo should be displayed in the GUI
 	public bool reloadAutomatically = false;            // Whether or not the weapon should reload automatically when out of ammo

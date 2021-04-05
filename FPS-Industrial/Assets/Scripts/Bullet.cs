@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
         if (bulletCollision.CompareTag("Player"))
         {
             //AudioManager.Instance.PlaySound(bullet);
-            (bulletCollision.gameObject.GetComponent("Weapon") as Weapon).ammoCapacity += 5;
+            (bulletCollision.gameObject.GetComponent("Weapon") as Weapon).currentAmmo += 5;
             this.gameObject.SetActive(false);
         }
     }

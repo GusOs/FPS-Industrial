@@ -22,8 +22,8 @@ public class Life : MonoBehaviour
     }
 
     /*Comprobar si ha colisionado con el jugador
-     * Reproducir audio de recarga
-     * añadir 5 de munición al arma
+     * Reproducir audio de vida
+     * añadir 5 puntos de vida
      * desactivar el item
     */
     private void OnTriggerEnter(Collider lifeCollision)

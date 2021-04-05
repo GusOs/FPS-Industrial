@@ -53,6 +53,10 @@ public class Health : MonoBehaviour
 		// This GameObject is officially dead.  This is used to make sure the Die() function isn't called again
 		dead = true;
 
+		// Mostrar menu (volver a jugar, volver al menu)
+		// time scale = 1
+
+		/*
 		// Make death effects
 		if (replaceWhenDead)
 			Instantiate(deadReplacement, transform.position, transform.rotation);
@@ -60,9 +64,6 @@ public class Health : MonoBehaviour
 			Instantiate(explosion, transform.position, transform.rotation);
 
 		if (isPlayer && deathCam != null)
-			deathCam.SetActive(true);
-
-		// Remove this GameObject from the scene
-		Destroy(gameObject);
+			deathCam.SetActive(true);*/
 	}
 }
