@@ -8,7 +8,7 @@ public class Life : MonoBehaviour
     private Collider lifeCollision;
 
     //Audio al colisionar
-    //public Sound bullet;
+    public Sound life;
 
     //Referencia al arma
     public GameObject lifePlayer;
@@ -30,7 +30,7 @@ public class Life : MonoBehaviour
     {
         if (lifeCollision.CompareTag("Player"))
         {
-            //AudioManager.Instance.PlaySound(bullet);
+            AudioManager.Instance.PlaySound(life);
             (lifeCollision.gameObject.GetComponent("Health") as Health).currentHealth += 5;
             this.gameObject.SetActive(false);
         }

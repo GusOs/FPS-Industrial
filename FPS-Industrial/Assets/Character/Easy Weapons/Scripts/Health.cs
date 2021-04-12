@@ -22,7 +22,9 @@ public class Health : MonoBehaviour
 	//public bool makeExplosion = false;			// Whether or not an explosion prefab should be instantiated
 	//public GameObject explosion;				// The explosion prefab to be instantiated
 
-	public bool isPlayer = false;				// Whether or not this health is the player
+	public bool isPlayer = false;               // Whether or not this health is the player
+
+	public Sound death;
 	//public GameObject deathCam;					// The camera to activate when the player dies
 
 	private bool dead = false;					// Used to make sure the Die() function isn't called twice
@@ -52,6 +54,10 @@ public class Health : MonoBehaviour
 	{
 		// This GameObject is officially dead.  This is used to make sure the Die() function isn't called again
 		dead = true;
+
+		Debug.Log("muerto");
+
+		AudioManager.Instance.PlaySound(death);
 
 		// Mostrar menu (volver a jugar, volver al menu)
 		// time scale = 1

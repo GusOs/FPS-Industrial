@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     private Collider bulletCollision;
 
     //Audio al colisionar
-    //public Sound bullet;
+    public Sound bullet;
 
     //Referencia al arma
     public GameObject weaponPlayer;
@@ -30,7 +30,7 @@ public class Bullet : MonoBehaviour
     {
         if (bulletCollision.CompareTag("Player"))
         {
-            //AudioManager.Instance.PlaySound(bullet);
+            AudioManager.Instance.PlaySound(bullet);
             (bulletCollision.gameObject.GetComponent("Weapon") as Weapon).currentAmmo += 5;
             this.gameObject.SetActive(false);
         }
