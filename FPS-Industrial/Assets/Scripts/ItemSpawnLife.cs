@@ -17,5 +17,11 @@ public class ItemSpawnLife : MonoBehaviour
     public void SpawnItem()
     {
         Instantiate(itemLife[Random.Range(0, itemLife.Length)], transform.position, Quaternion.identity);
+
+        itemLife = GameObject.FindGameObjectsWithTag("Item");
+        foreach (GameObject go in itemLife)
+        {
+            go.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }
