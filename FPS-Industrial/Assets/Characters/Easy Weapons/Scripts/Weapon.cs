@@ -205,7 +205,7 @@ public class Weapon : MonoBehaviour
 	// Audio
 	public AudioClip fireSound;							// Sound to play when the weapon is fired
 	public AudioClip reloadSound;						// Sound to play when the weapon is reloading
-	public AudioClip dryFireSound;						// Sound to play when the user tries to fire but is out of ammo
+	public AudioClip dryFireSound;                      // Sound to play when the user tries to fire but is out of ammo
 
 	// Other
 	private bool canFire = true;						// Whether or not the weapon can currently fire (used for semi-auto weapons)
