@@ -47,11 +47,12 @@ public class FirstPersonHeadBob : MonoBehaviour {
 
 	Vector3 prevPosition;								// the position from last frame
 	Vector3 prevVelocity = Vector3.zero;				// the velocity from last frame
-	bool prevGrounded = true;							// whether the character was grounded last frame
+	bool prevGrounded = true;                           // whether the character was grounded last frame
+    private float nextStepTime;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
 		originalLocalPos = head.localPosition;
 		character = GetComponent<FirstPersonCharacter>();
@@ -135,7 +136,7 @@ public class FirstPersonHeadBob : MonoBehaviour {
 				//nextStepTime = headBobCycle + .5f;
 				
 			} else {
-				/*		// Don't play footstep sounds for this demo
+						// Don't play footstep sounds for this demo
 				if ( headBobCycle > nextStepTime)
 				{
 					// time for next footstep sound:
@@ -145,15 +146,15 @@ public class FirstPersonHeadBob : MonoBehaviour {
 					// pick & play a random footstep sound from the array,
 					// excluding sound at index 0
 					int n = Random.Range(1,footstepSounds.Length);
-					audio.clip = footstepSounds[n];
-					audio.Play();
+					GetComponent<AudioSource>().clip = footstepSounds[n];
+					GetComponent<AudioSource>().Play();
 
 					// move picked sound to index 0 so it's not picked next time
 					footstepSounds[n] = footstepSounds[0];
-					footstepSounds[0] = audio.clip;
+					footstepSounds[0] = GetComponent<AudioSource>().clip;
 
 				}
-				 */
+				 
 			}
 			prevGrounded = true;
 			
