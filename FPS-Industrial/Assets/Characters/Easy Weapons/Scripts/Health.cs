@@ -28,7 +28,9 @@ public class Health : MonoBehaviour
 	public Sound death;
 	//public GameObject deathCam;					// The camera to activate when the player dies
 
-	private bool dead = false;					// Used to make sure the Die() function isn't called twice
+	private bool dead = false;                  // Used to make sure the Die() function isn't called twice
+
+	public bool showCurrentLife;
 
 	// Use this for initialization
 	void Start()
@@ -54,7 +56,12 @@ public class Health : MonoBehaviour
 			currentHealth = maxHealth;
 	}
 
-	public void Die()
+    private void OnGUI()
+    {
+		GUI.Label(new Rect(40, Screen.height - 40, 100, 20), "" + currentHealth);
+	}
+
+    public void Die()
 	{
 		// This GameObject is officially dead.  This is used to make sure the Die() function isn't called again
 		dead = true;
