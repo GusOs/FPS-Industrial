@@ -17,9 +17,6 @@ public class GameManager : MonoBehaviour
     //Variable para comprobar que el juego está activo
     public bool isGameActive;
 
-    //Objeto spawn del item
-    public ItemSpawnLife itemSpawner;
-
 
     // Start is called before the first frame update
     void Awake()
