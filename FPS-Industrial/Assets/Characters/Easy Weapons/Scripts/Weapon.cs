@@ -608,6 +608,7 @@ public class Weapon : MonoBehaviour
 
 			if (Physics.Raycast(ray, out hit, range))
 			{
+
 				// Warmup heat
 				float damage = power;
 				if (warmup)
@@ -618,7 +619,7 @@ public class Weapon : MonoBehaviour
 				
 				// Damage
 				hit.collider.gameObject.SendMessageUpwards("ChangeHealth", -damage, SendMessageOptions.DontRequireReceiver);
-				
+
 				if (shooterAIEnabled)
 				{
 					hit.transform.SendMessageUpwards("Damage", damage / 100, SendMessageOptions.DontRequireReceiver);

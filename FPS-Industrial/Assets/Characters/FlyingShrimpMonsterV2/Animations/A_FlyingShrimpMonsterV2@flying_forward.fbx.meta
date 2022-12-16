@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 68e01c256103b9142ab98d09f21cbb20
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chest_j
+    100004: head_j1
+    100006: L_claw1_j1
+    100008: L_claw2_j1
+    100010: L_claw3_j1
+    100012: L_claw4_j1
+    100014: L_frontpaw1_j1
+    100016: L_frontpaw2_j1
+    100018: L_frontpaw3_j1
+    100020: L_frontwing2_j1
+    100022: L_frontwing3_j1
+    100024: L_frontwing4_j1
+    100026: L_frontwing_j1
+    100028: L_hindpaw1_j1
+    100030: L_hindpaw2_j1
+    100032: L_hindpaw3_j1
+    100034: L_hindwing2_j1
+    100036: L_hindwing3_j1
+    100038: L_hindwing4_j1
+    100040: L_hindwing_j1
+    100042: L_jaw_j
+    100044: L_middletpaw1_j1
+    100046: L_middletpaw2_j1
+    100048: L_middletpaw3_j1
+    100050: L_wingrudiment1_j
+    100052: L_wingrudiment2_j1
+    100054: R_claw1_j1
+    100056: R_claw2_j1
+    100058: R_claw3_j1
+    100060: R_claw4_j1
+    100062: R_frontpaw1_j1
+    100064: R_frontpaw2_j1
+    100066: R_frontpaw3_j1
+    100068: R_frontwing2_j1
+    100070: R_frontwing3_j1
+    100072: R_frontwing4_j1
+    100074: R_frontwing_j1
+    100076: R_hindpaw1_j1
+    100078: R_hindpaw2_j1
+    100080: R_hindpaw3_j1
+    100082: R_hindwing2_j1
+    100084: R_hindwing3_j1
+    100086: R_hindwing4_j1
+    100088: R_hindwing_j1
+    100090: R_jaw_j
+    100092: R_middletpaw1_j1
+    100094: R_middletpaw2_j1
+    100096: R_middletpaw3_j1
+    100098: R_wingrudiment1_j
+    100100: R_wingrudiment2_j1
+    100102: root_j1
+    100104: tail1_j1
+    100106: tail2_j1
+    100108: tail3_j1
+    100110: tail4_j1
+    400000: //RootNode
+    400002: chest_j
+    400004: head_j1
+    400006: L_claw1_j1
+    400008: L_claw2_j1
+    400010: L_claw3_j1
+    400012: L_claw4_j1
+    400014: L_frontpaw1_j1
+    400016: L_frontpaw2_j1
+    400018: L_frontpaw3_j1
+    400020: L_frontwing2_j1
+    400022: L_frontwing3_j1
+    400024: L_frontwing4_j1
+    400026: L_frontwing_j1
+    400028: L_hindpaw1_j1
+    400030: L_hindpaw2_j1
+    400032: L_hindpaw3_j1
+    400034: L_hindwing2_j1
+    400036: L_hindwing3_j1
+    400038: L_hindwing4_j1
+    400040: L_hindwing_j1
+    400042: L_jaw_j
+    400044: L_middletpaw1_j1
+    400046: L_middletpaw2_j1
+    400048: L_middletpaw3_j1
+    400050: L_wingrudiment1_j
+    400052: L_wingrudiment2_j1
+    400054: R_claw1_j1
+    400056: R_claw2_j1
+    400058: R_claw3_j1
+    400060: R_claw4_j1
+    400062: R_frontpaw1_j1
+    400064: R_frontpaw2_j1
+    400066: R_frontpaw3_j1
+    400068: R_frontwing2_j1
+    400070: R_frontwing3_j1
+    400072: R_frontwing4_j1
+    400074: R_frontwing_j1
+    400076: R_hindpaw1_j1
+    400078: R_hindpaw2_j1
+    400080: R_hindpaw3_j1
+    400082: R_hindwing2_j1
+    400084: R_hindwing3_j1
+    400086: R_hindwing4_j1
+    400088: R_hindwing_j1
+    400090: R_jaw_j
+    400092: R_middletpaw1_j1
+    400094: R_middletpaw2_j1
+    400096: R_middletpaw3_j1
+    400098: R_wingrudiment1_j
+    400100: R_wingrudiment2_j1
+    400102: root_j1
+    400104: tail1_j1
+    400106: tail2_j1
+    400108: tail3_j1
+    400110: tail4_j1
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

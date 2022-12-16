@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        //playerScript = lifeplayer.GetComponent<PlayerMovement>();
         Time.timeScale = 1;
     }
 
@@ -59,6 +58,5 @@ public class GameManager : MonoBehaviour
         int wait_time = Random.Range(4, 8);
         yield return new WaitForSeconds(wait_time);
         //enemySpawner.SpawnEnemy();
-        //enemySpawner2.SpawnEnemy();
     }
 }
