@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
     //Daño de ataque
-    public int fireAttack = 5;
+    public int bitteAttack = 5;
 
     // Colisión de la bala
     private Collider bulletCollider;
@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (weaponCollider.gameObject.CompareTag("Player"))
         {
-            (weaponCollider.gameObject.GetComponent("Health") as Health).currentHealth -= fireAttack;
+            (weaponCollider.gameObject.GetComponent("Health") as Health).currentHealth -= bitteAttack;
             AudioManager.Instance.PlaySound(bulletHit);
         }
     }
