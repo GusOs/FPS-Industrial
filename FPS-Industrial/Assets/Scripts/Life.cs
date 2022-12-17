@@ -31,7 +31,7 @@ public class Life : MonoBehaviour
         if (lifeCollision.CompareTag("Player"))
         {
             AudioManager.Instance.PlaySound(life);
-            (lifeCollision.gameObject.GetComponent("Health") as Health).currentHealth += 5;
+            (lifeCollision.gameObject.GetComponent("Health") as Health).currentHealth += 25;
             this.gameObject.SetActive(false);
         }
     }

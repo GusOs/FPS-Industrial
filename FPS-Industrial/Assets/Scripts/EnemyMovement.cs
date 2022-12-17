@@ -9,8 +9,11 @@ public class EnemyMovement : MonoBehaviour
     //Transform del enemigo
     public Transform player;
 
+    //Daño de ataque
+    public int bitteAttack = 5;
+
     //Distancia de detección
-    public float distance = 16f;
+    public float distance = 45f;
 
     //Animator del enemigo
     public Animator anim;
@@ -38,25 +41,21 @@ public class EnemyMovement : MonoBehaviour
 
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
-            anim.SetInteger("moving", 0);
-            nav = GetComponent<NavMeshAgent>();
-            nav.isStopped = true;
 
-            if (direction.magnitude < 15)
+            if (direction.magnitude < 60)
             {
                 nav = GetComponent<NavMeshAgent>();
                 nav.isStopped = false;
                 anim.SetBool("attack", false);
-                anim.SetBool("trick", true);
-                anim.SetInteger("moving", 1);
+                anim.SetInteger("moving", 9);
                 nav.SetDestination(player.position);
             }
 
-            if (direction.magnitude < 5)
+            if (direction.magnitude < 4f)
             {
+                anim.SetInteger("moving", 0);
                 nav = GetComponent<NavMeshAgent>();
                 nav.isStopped = true;
-                anim.SetInteger("moving", 0);
                 anim.SetBool("attack", true);
             }
         }

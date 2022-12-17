@@ -118,7 +118,7 @@ public class Weapon : MonoBehaviour
 	private bool beaming = false;						// Whether or not the weapon is currently firing a beam - used to make sure StopBeam() is called after the beam is no longer being fired
 
 	// Power
-	public float power = 80.0f;							// The amount of power this weapon has (how much damage it can cause) (if the type is raycast or beam)
+	public float power = 20.0f;							// The amount of power this weapon has (how much damage it can cause) (if the type is raycast or beam)
 	public float forceMultiplier = 10.0f;				// Multiplier used to change the amount of force applied to rigid bodies that are shot
 	public float beamPower = 1.0f;						// Used to determine damage caused by beam weapons.  This will be much lower because this amount is applied to the target every frame while firing
 
@@ -854,7 +854,12 @@ public class Weapon : MonoBehaviour
 				Debug.Log("Projectile to be instantiated is null.  Make sure to set the Projectile field in the inspector.");
 			}
 		}
-		
+
+		if(projectile.gameObject.CompareTag("Player")) {
+			(projectile.gameObject.GetComponent("Health") as Health).currentHealth -= power;
+
+		}
+
 		// Recoil
 		if (recoil)
 			Recoil();
