@@ -855,8 +855,8 @@ public class Weapon : MonoBehaviour
 			}
 		}
 
-		if(projectile.gameObject.CompareTag("Player")) {
-			(projectile.gameObject.GetComponent("Health") as Health).currentHealth -= power;
+		if(projectile.gameObject.CompareTag("Enemy")) {
+            (projectile.gameObject.GetComponent("EnemyLife") as EnemyLife).currentHealth -= 20;
 
 		}
 
