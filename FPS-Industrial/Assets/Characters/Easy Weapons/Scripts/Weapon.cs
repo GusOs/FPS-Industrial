@@ -857,7 +857,6 @@ public class Weapon : MonoBehaviour
 
 		if(projectile.gameObject.CompareTag("Enemy")) {
             (projectile.gameObject.GetComponent("EnemyLife") as EnemyLife).currentHealth -= 20;
-
 		}
 
 		// Recoil
