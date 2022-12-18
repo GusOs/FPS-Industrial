@@ -43,7 +43,7 @@ public class EnemyMovement : MonoBehaviour
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
 
-            if (direction.magnitude < 60)
+            if (direction.magnitude < 120)
             {
                 nav = GetComponent<NavMeshAgent>();
                 nav.isStopped = false;
