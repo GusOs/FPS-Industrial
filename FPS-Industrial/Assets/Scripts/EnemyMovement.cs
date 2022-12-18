@@ -24,6 +24,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        GetComponent<Collider>();
     }
 
     // Update is called once per frame

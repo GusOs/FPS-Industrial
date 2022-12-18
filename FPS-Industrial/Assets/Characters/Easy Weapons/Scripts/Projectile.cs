@@ -42,7 +42,8 @@ public class Projectile : MonoBehaviour
 
 	private float lifeTimer = 0.0f;										// The timer to keep track of how long this projectile has been in existence
 	private float targetListUpdateTimer = 0.0f;							// The timer to keep track of how long it's been since the enemy list was last updated
-	private GameObject[] enemyList;										// An array to hold possible targets
+	private GameObject[] enemyList;                                     // An array to hold possible targets
+
 
 
 	void Start()
@@ -118,6 +119,10 @@ public class Projectile : MonoBehaviour
 	{
 		// If the projectile collides with something, call the Hit() function
 		Hit(col);
+		if (col.gameObject.CompareTag("Enemy"))
+		{
+			(col.gameObject.GetComponent("EnemyLife") as EnemyLife).currentHealth -= 20;
+		}
 	}
 
 	void Hit(Collision col)
@@ -128,7 +133,7 @@ public class Projectile : MonoBehaviour
 		// Apply damage to the hit object if damageType is set to Direct
 		if (damageType == DamageType.Direct)
 		{
-			col.collider.gameObject.SendMessageUpwards("ChangeHealth", -damage, SendMessageOptions.DontRequireReceiver);
+			col.collider.gameObject.SendMessageUpwards("Enemy", -damage, SendMessageOptions.DontRequireReceiver);
 
 			//call the ApplyDamage() function on the enenmy CharacterSetup script
 			if (col.collider.gameObject.layer == LayerMask.NameToLayer("Limb"))

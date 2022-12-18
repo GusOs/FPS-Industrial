@@ -208,7 +208,7 @@ public class Weapon : MonoBehaviour
 	public AudioClip dryFireSound;                      // Sound to play when the user tries to fire but is out of ammo
 
 	// Other
-	private bool canFire = true;						// Whether or not the weapon can currently fire (used for semi-auto weapons)
+	private bool canFire = true;                        // Whether or not the weapon can currently fire (used for semi-auto weapons)
 
 
 	// Use this for initialization
@@ -855,10 +855,6 @@ public class Weapon : MonoBehaviour
 			}
 		}
 
-		if(projectile.gameObject.CompareTag("Enemy")) {
-            (projectile.gameObject.GetComponent("EnemyLife") as EnemyLife).currentHealth -= 20;
-		}
-
 		// Recoil
 		if (recoil)
 			Recoil();
@@ -882,9 +878,9 @@ public class Weapon : MonoBehaviour
 		// Play the gunshot sound
 		GetComponent<AudioSource>().PlayOneShot(fireSound);
 	}
-	
-	// Beam system
-	void Beam()
+
+    // Beam system
+    void Beam()
 	{
 		// Send a messsage so that users can do other actions whenever this happens
 		SendMessageUpwards("OnEasyWeaponsBeaming", SendMessageOptions.DontRequireReceiver);
